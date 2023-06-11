@@ -46,7 +46,7 @@ Download and uncompress the latest release : https://github.com/SHWotever/FakeCH
 ![image](https://github.com/SHWotever/FakeCH340DriverFixer/assets/2207331/4482a1ed-2f09-40e2-8561-c21695770552)
 
 ### Revert fix
-- Exectute ```FakeCH340DriverFixer.exe unblock``` to revert the windows update changes, then you can use windows update to reinstall the lastest driver update.
+- Exectute ```FakeCH340DriverFixer.exe unblock``` to revert the windows update changes, then you can use windows update to reinstall the latest driver update.
 
 ![image](https://github.com/SHWotever/FakeCH340DriverFixer/assets/2207331/8da63dc3-6cca-4ada-ade1-292c0029d763)
 
