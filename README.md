@@ -10,7 +10,7 @@ This triggers various symptoms as impossible to open the serial port or some cra
 
 The huge problem is that windows update will reinstall again and again the offending driver, requiring some deeper manipulations to block and keep an older driver.
 
-NB : if you freshly bought your device (arduino or other devices) running such fake chips, better return it and ask for a refund instead of encouraging keeping fake chips on the market. for others having such chips with expired warranty this workaround is for you.
+NB : if you freshly bought your device (arduino or other devices) running such fake chips, better return it and ask for a refund instead of encouraging keeping fake chips on the market. For others having such chips with expired warranty this workaround is for you.
 
 ### How to recognize a fake CH340G chip ?
 
