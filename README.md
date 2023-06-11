@@ -36,6 +36,8 @@ This triggers various symptoms as impossible to open the serial port or some cra
 
 ## How to use 
 
+Download and uncompress the latest release : https://github.com/SHWotever/FakeCH340DriverFixer/releases/latest
+
 ### Apply fix
 - Exectute directly ```FakeCH340DriverFixer.exe``` to automatically fix the drivers.
 
@@ -45,3 +47,7 @@ This triggers various symptoms as impossible to open the serial port or some cra
 - Exectute ```FakeCH340DriverFixer.exe unblock``` to revert the windows update changes, then you can use windows update to reinstall the lastest driver update.
 
 ![image](https://github.com/SHWotever/FakeCH340DriverFixer/assets/2207331/8da63dc3-6cca-4ada-ade1-292c0029d763)
+
+## Limitations
+- It's not possible to revert reliably the driver only for a specific device instance, windows update will blindly update all of them automatically.
+- The fixer only targets a specific driver for uninstallation, if the driver gets a new update this fix will have to be updated.
