@@ -4,7 +4,7 @@ Driver fix for fake or counterfeit CH340 chips
 
 ## Background
 
-Recently (April 2023) a driver update delivered through windows update  (3.5.2019.1) is breaking some fake CH340G chips (this chip is used to emulate an USB serial port to communicate with the Arduino main MCU).
+Recently (April 2023) a driver update delivered through windows update  (3.8.2023.02) is breaking some fake CH340G chips (this chip is used to emulate an USB serial port to communicate with the Arduino main MCU).
 
 This triggers various symptoms as impossible to open the serial port or some crashs depending of the application. Some software still work with it as chip crashes seems to be related to the port settings.
 
