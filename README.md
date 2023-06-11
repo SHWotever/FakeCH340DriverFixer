@@ -8,6 +8,8 @@ Recently (April 2023) a driver update delivered through windows update  (3.5.201
 
 This triggers various symptoms as impossible to open the serial port or some crashs depending of the application. Some software still work with it as chip crashes seems to be related to the port settings.
 
+The huge problem is that windows update will reinstall again and again the offending driver, requiring some deeper manipulations to block and keep an older driver.
+
 ### How to recognize a fake CH340G chip ?
 
 - The device will appear as a CH340 in the device manager : 
@@ -29,9 +31,9 @@ This triggers various symptoms as impossible to open the serial port or some cra
 
 ## What it does ?
 
-- Enumerate CH340 based serial ports and give an estimate if the chip is likely to be fake or genuine
-- Install the last known to work driver with fake chips (3.5.2019.1)
-- Uninstall the driver known not to work driver with fake chips (3.8.2023.02)
+- Enumerate CH340 based serial ports and give an estimate if the chip is likely to be fake or genuine.
+- Install the last known to work driver with fake chips (3.5.2019.1).
+- Uninstall the driver known not to work driver with fake chips (3.8.2023.02).
 - Block **all** pending windows update for CH340 driver (Hide the update in the windows update semantic) : once the driver unistalled the drivers updates will automatically be pending again allowing to block it.  
 
 ## How to use 
@@ -51,3 +53,4 @@ Download and uncompress the latest release : https://github.com/SHWotever/FakeCH
 ## Limitations
 - It's not possible to revert reliably the driver only for a specific device instance, windows update will blindly update all of them automatically.
 - The fixer only targets a specific driver for uninstallation, if the driver gets a new update this fix will have to be updated.
+- Manipulating windows update might make nervous some Antiviruses and trigger false positives, you've been warned ;) You have all the source code to check yourself what it does.
