@@ -14,7 +14,7 @@ namespace FakeCH340DriverFixer
             var deviceId = "USB\\VID_1A86&PID_7523";
 
             // Guilty driver version to be uninstalled
-            var driverVersion = "3.8.2023.02";
+            string[] driverVersions = new string[] { "3.8.2023.02", "3.9.2024.09" };
 
             if (args.Length > 0 && args[0].Equals("unblock", StringComparison.OrdinalIgnoreCase))
             {
@@ -29,8 +29,20 @@ namespace FakeCH340DriverFixer
                 {
                     Console.WriteLine($"Installing default driver ...");
                     InstallDefaultDriver();
+                    bool hasUninstalled = false;
 
-                    if (!OEMDriversHelper.UninstallDriverVersion(deviceId, driverVersion))
+                    foreach (var driverVersion in driverVersions)
+                    {
+                        bool driverUninstalled = OEMDriversHelper.UninstallDriverVersion(deviceId, driverVersion);
+
+                        if (driverUninstalled)
+                        {
+                            Console.WriteLine($"Driver {driverVersion} uninstalled");
+                        }
+                        hasUninstalled = hasUninstalled || driverUninstalled;
+                    }
+
+                    if (!hasUninstalled)
                     {
                         Console.WriteLine($"Driver non compatible with fake CH340 not found");
                     }
