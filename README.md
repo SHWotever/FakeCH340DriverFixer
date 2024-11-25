@@ -10,7 +10,9 @@ This triggers various symptoms as impossible to open the serial port or some cra
 
 The huge problem is that windows update will reinstall again and again the offending driver, requiring some deeper manipulations to block and keep an older driver.
 
-NB : if you freshly bought your device (Arduino or other devices) running such fake chips, better return it and ask for a refund instead of encouraging keeping fake chips on the market. For others having such chips with expired warranty this workaround is for you.
+NB : 
+- if you freshly bought your device (Arduino or other devices) running such fake chips, better return it and ask for a refund instead of encouraging keeping fake chips on the market. For others having such chips with expired warranty this workaround is for you.
+- A new version came out with the same issues: 3.9.2024.09, the patch has been updated to remove it too
 
 ### How to recognise a fake CH340G chip ?
 
@@ -35,7 +37,7 @@ NB : if you freshly bought your device (Arduino or other devices) running such f
 
 - Enumerate CH340 based serial ports and give an estimate if the chip is likely to be fake or genuine.
 - Install the last known to work driver with fake chips (3.5.2019.1).
-- Uninstall the driver known not to work driver with fake chips (3.8.2023.02).
+- Uninstall the driver known not to work driver with fake chips (3.8.2023.02,  3.9.2024.09).
 - Block **all** pending windows update for CH340 driver (Hide the update in the windows update semantic) : once the driver uninstalled the drivers updates will automatically be pending again allowing to block it.  
 
 ## How to use 
