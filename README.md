@@ -2,6 +2,8 @@
 
 Driver fix for fake or counterfeit CH340 chips
 
+You can download the latest release here : https://github.com/SHWotever/FakeCH340DriverFixer/releases/latest
+
 ## Background
 
 Recently (April 2023) a driver update delivered through windows update  (3.8.2023.02) is breaking some fake CH340G chips (this chip is used to emulate a USB serial port to communicate with the Arduino main MCU).
