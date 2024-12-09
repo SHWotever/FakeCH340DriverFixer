@@ -10,6 +10,8 @@ Recently (April 2023) a driver update delivered through windows update  (3.8.202
 
 This triggers various symptoms as impossible to open the serial port or some crashes depending of the application. Some software still work with it as chip crashes seems to be related to the port settings.
 
+The 2024 driver version, might not crash but create very excessive CPU usage.
+
 The huge problem is that windows update will reinstall again and again the offending driver, requiring some deeper manipulations to block and keep an older driver.
 
 NB : 
